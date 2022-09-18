@@ -13,3 +13,9 @@ PROCEDURE _Customer_Data_Form("order")
         STORE "Choose The Food Menu" with boolean FALSE
 END PROCEDURE
 
+PROCEDURE Food_Notification_Not_Available()
+    PRINT "Menu yang dicari tidak tersedia"
+    END PROGRAM
+END PROCEDURE 
+
+
