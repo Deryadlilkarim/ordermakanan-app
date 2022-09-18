@@ -22,5 +22,10 @@ PROCEDURE Order_From()
     PRINT "Menu sudah dipilih"
 END PROCEDURE 
 
+PROCEDURE Calculate_Cost()
+    PRINT "Silahkan melakukan pembayaran"
+    END PROGRAM
+END PROCEDURE
+
 
 
