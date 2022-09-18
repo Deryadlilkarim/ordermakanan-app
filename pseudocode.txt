@@ -18,4 +18,9 @@ PROCEDURE Food_Notification_Not_Available()
     END PROGRAM
 END PROCEDURE 
 
+PROCEDURE Order_From()
+    PRINT "Menu sudah dipilih"
+END PROCEDURE 
+
+
 
