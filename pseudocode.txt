@@ -1,0 +1,52 @@
+Program OrderMakanan-app
+
+START PROGRAM
+
+READ AND WRITE "Order" with string
+STORE "Choose The Food Menu" with boolean FALSE
+STORE "Final Check Order" with boolean FALSE
+
+PROCEDURE _Customer_Data_Form("order")
+    IF "Order" is exist in Food Menu
+        STORE "Choose The Food Menu" with boolean TRUE
+    ELSE
+        STORE "Choose The Food Menu" with boolean FALSE
+END PROCEDURE
+
+PROCEDURE Food_Notification_Not_Available()
+    PRINT "Menu yang dicari tidak tersedia"
+    END PROGRAM
+END PROCEDURE 
+
+PROCEDURE Order_From()
+    PRINT "Menu sudah dipilih"
+END PROCEDURE 
+
+PROCEDURE Order_Process()
+    STORE "Final Check Order" with boolean TRUE
+    PRINT "Terima Kasih Telah memiih menu"
+END PROCEDURE 
+
+PROCEDURE Calculate_Cost()
+    PRINT "Silahkan melakukan pembayaran"
+    END PROGRAM
+END PROCEDURE
+
+IF "Order" is not equal "NULL"
+    CALL Costumer_Data_From("Order")
+
+    IF "Choose The Food Menu" is equal FALSE
+        CALL Food_Notification_Not_Available()
+
+    ELSE
+        WHILE "Final Check Order" is equal "FALSE" 
+            DO  CALL Order_From()
+                
+        CALL Order_From()
+        CALL Calculate_Cost()
+ELSE
+    PRINT "Menu Tidak Tersedia"
+    END PROGRAM
+
+
+
