@@ -6,3 +6,10 @@ READ AND WRITE "Order" with string
 STORE "Choose The Food Menu" with boolean FALSE
 STORE "Final Check Order" with boolean FALSE
 
+PROCEDURE _Customer_Data_Form("order")
+    IF "Order" is exist in Food Menu
+        STORE "Choose The Food Menu" with boolean TRUE
+    ELSE
+        STORE "Choose The Food Menu" with boolean FALSE
+END PROCEDURE
+
