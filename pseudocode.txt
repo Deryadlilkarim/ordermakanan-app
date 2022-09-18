@@ -22,6 +22,11 @@ PROCEDURE Order_From()
     PRINT "Menu sudah dipilih"
 END PROCEDURE 
 
+PROCEDURE Order_Process()
+    STORE "Final Check Order" with boolean TRUE
+    PRINT "Terima Kasih Telah memiih menu"
+END PROCEDURE 
+
 PROCEDURE Calculate_Cost()
     PRINT "Silahkan melakukan pembayaran"
     END PROGRAM
