@@ -1,0 +1,8 @@
+Program OrderMakanan-app
+
+START PROGRAM
+
+READ AND WRITE "Order" with string
+STORE "Choose The Food Menu" with boolean FALSE
+STORE "Final Check Order" with boolean FALSE
+
