@@ -32,5 +32,21 @@ PROCEDURE Calculate_Cost()
     END PROGRAM
 END PROCEDURE
 
+IF "Order" is not equal "NULL"
+    CALL Costumer_Data_From("Order")
+
+    IF "Choose The Food Menu" is equal FALSE
+        CALL Food_Notification_Not_Available()
+
+    ELSE
+        WHILE "Final Check Order" is equal "FALSE" 
+            DO  CALL Order_From()
+                
+        CALL Order_From()
+        CALL Calculate_Cost()
+ELSE
+    PRINT "Menu Tidak Tersedia"
+    END PROGRAM
+
 
 
